@@ -22,9 +22,8 @@ public class BusinessCard {
 	
 	
 	while(licznik<=underlineLength){
-		 //System.out.print(star);
-		  int g = licznik++;
-		  System.out.print(g);
+		 System.out.print(star);
+		 licznik++;
 	  }
 	
 	System.out.println();
