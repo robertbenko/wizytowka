@@ -1,38 +1,58 @@
 package benko;
+import java.util.Scanner;
 
 public class BusinessCard {
 	
 	public static void main(String[] args) {
 	
-	String name = "Robert";
-	String surname = "Ben";
-	int number = 1234;
-	String city = "Krw";
-	String upperLine = name + " " + surname;
-	String underline = number + " " + city;
+// WCZYTYWANIE DANYCH STANDARDOWE WEJŚCIE		
+//		Scanner skaner = new Scanner(System.in);
+//		
+//		System.out.println("Podaj imię");
+//		String name = skaner.next();
+//		System.out.println("Nazwisko");
+//		String surname = skaner.next();
+//		System.out.println("Numer telefonu");
+//		int number = skaner.nextInt();
+//		System.out.println("Miasto");
+//		String city = skaner.next();
+		String name = "Robert";
+		String surname = "Benko";
+		int number = 1234444;
+		String city = "Krakow";
+		
+	
 	String star = "*";
 	int i;
 	int licznik = 0;
 	int stars;
+	String empty = "";
+	String oneSpace = " ";
+	String empty1;
 
-
+// ŁĄCZENIE STOPKI
+	
+	String upperLine = star + name + oneSpace + surname + oneSpace;
+	String underline = star + number + oneSpace + city + oneSpace;
 	int underlineLength = underline.length();
 	int upperLineLength = upperLine.length();
-	String empty = "";
+	int lengthDiff = underlineLength - upperLineLength;
 	
-	
-	while(licznik<=underlineLength){
-		 System.out.print(star);
-		 licznik++;
-	  }
-	
-	System.out.println();
-	System.out.println(star + name + " " + surname);
-	System.out.println(star + underline);
+// PĘTLA 1 - WYPISUJE GÓRNE GWIAZDKI
 	
 	for(i=0; i<=underlineLength; i++) {
-		System.out.print(star);
-	}
+		empty = empty + star;
+		}
+	
+	//for(i=0; )
+	
+// ZAWARTOŚĆ	
+	System.out.println(empty);
+	System.out.println(upperLine + star);
+	System.out.print(underline + star);
+	System.out.println();
+	System.out.println(empty);
 	
 	}
+	
 }
