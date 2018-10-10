@@ -19,7 +19,7 @@ public class BusinessCard {
 		String name = "Robert";
 		String surname = "Benko";
 		int number = 1234444;
-		String city = "Krakow";
+		String city = "Krakhhh";
 		
 	
 	String star = "*";
@@ -28,30 +28,38 @@ public class BusinessCard {
 	int stars;
 	String empty = "";
 	String oneSpace = " ";
-	String empty1;
+	String empty1= "";
+	String spacesPlusStar = null;
+	int test=0;
 
 // ŁĄCZENIE STOPKI
 	
-	String upperLine = star + name + oneSpace + surname + oneSpace;
+	String upperLine = star + name + oneSpace + surname;
 	String underline = star + number + oneSpace + city + oneSpace;
 	int underlineLength = underline.length();
 	int upperLineLength = upperLine.length();
-	int lengthDiff = underlineLength - upperLineLength;
-	
+		
 // PĘTLA 1 - WYPISUJE GÓRNE GWIAZDKI
 	
 	for(i=0; i<=underlineLength; i++) {
 		empty = empty + star;
+		
 		}
 	
-	//for(i=0; )
+	int emptyLength = empty.length();
+	int lengthDiff = emptyLength - upperLineLength;
 	
+	for(i=0; i<lengthDiff-1; i++) {
+		empty1 = empty1 + oneSpace;
+	}
+
 // ZAWARTOŚĆ	
 	System.out.println(empty);
-	System.out.println(upperLine + star);
+	System.out.println(upperLine + empty1 + star);
 	System.out.print(underline + star);
 	System.out.println();
 	System.out.println(empty);
+	System.out.println(oneSpace.length());
 	
 	}
 	
