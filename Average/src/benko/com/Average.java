@@ -27,7 +27,8 @@ public class Average {
 // TIP ODNIESIENIE DO INNEJ METODY 
 		
 		System.out.println(Average.average(marks));
-		double c  = Average.average(marks);
+		Average.maxScore(marks); //odniesienie w sposób samego zapisu bez instrukcji, drukowanie zdefinowane jest w samej metodzie
+		//double c  = Average.average(marks);
 		
 
 	}
@@ -48,5 +49,17 @@ public class Average {
 	    return average;
 	}
 	
+	public static int maxScore(int[] marks) {
+		int m = marks[0];
+		
+		for(int i=0; i<marks.length; i++) {
+			if (m < marks[i]) {
+				m = marks[i];
+			}
+		}
+		System.out.println("Maksymalna wartość to :" + m);
+		
+		return m;
+	}
 
 }
