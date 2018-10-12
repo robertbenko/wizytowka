@@ -6,6 +6,8 @@ public class TriangleField {
 		int a = 5;
 		int h = 3;
 		double triangle;
+	
+//TIP RZUTOWANIE
 		
 		triangle = (double)a*h/2;
 		

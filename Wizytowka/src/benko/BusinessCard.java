@@ -5,7 +5,7 @@ public class BusinessCard {
 	
 	public static void main(String[] args) {
 	
-// WCZYTYWANIE DANYCH STANDARDOWE WEJŚCIE		
+// TIP WCZYTYWANIE DANYCH STANDARDOWE WEJŚCIE		
 //		Scanner skaner = new Scanner(System.in);
 //		
 //		System.out.println("Podaj imię");
@@ -39,11 +39,10 @@ public class BusinessCard {
 	int underlineLength = underline.length();
 	int upperLineLength = upperLine.length();
 		
-// PĘTLA 1 - WYPISUJE GÓRNE GWIAZDKI
+// TIP PĘTLA 1 - WYPISUJE GWIAZDKI, DODAJE GWIAZDKI DO PUSTEGO MIEJSCA
 	
 	for(i=0; i<=underlineLength; i++) {
 		empty = empty + star;
-		
 		}
 	
 	int emptyLength = empty.length();
@@ -59,7 +58,7 @@ public class BusinessCard {
 	System.out.print(underline + star);
 	System.out.println();
 	System.out.println(empty);
-	System.out.println(oneSpace.length());
+	//System.out.println(oneSpace.length());
 	
 	}
 	
