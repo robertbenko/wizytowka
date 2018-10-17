@@ -18,11 +18,11 @@ public class Dividers {
 	
 	public static double readNumber(double a) {
 		
-		Scanner skaner = new Scanner(System.in);
+		//Scanner skaner = new Scanner(System.in);
 		
-		System.out.println("podaj liczbe do sprawdzenia");
-		a = skaner.nextInt();
-		
+		//System.out.println("podaj liczbe do sprawdzenia");
+		//a = skaner.nextInt();
+		a = 10;
 		return a;
 	}
 	
@@ -48,16 +48,19 @@ public class Dividers {
 	
 	public static int[] findDividers(int[] divider) {
 		int dividers=0;
-		double a = 0;
+		double a = 10;
+		//int i=0;
 		int[] d = new int[(int) (readNumber(a)/2)];
 		
 		for(int i=0; i<readNumber(a)/2; i++) {
 			if(readNumber(a) % 2 == 0) {
-				d[i]= dividers + divider[i];
-				
+				int k= i;
+				d[i]= i+i;
+				System.out.println(k);
 			}
+				
 		}
-		System.out.println(d);
+		
 		
 		return divider;
 	}

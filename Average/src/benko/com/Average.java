@@ -26,8 +26,8 @@ public class Average {
 		
 // TIP ODNIESIENIE DO INNEJ METODY 
 		
-		System.out.println(Average.average(marks));
-		Average.maxScore(marks); //odniesienie w sposób samego zapisu bez instrukcji, drukowanie zdefinowane jest w samej metodzie
+		System.out.println(average(marks));
+		maxScore(marks); //odniesienie w sposób samego zapisu bez instrukcji, drukowanie zdefinowane jest w samej metodzie
 		//double c  = Average.average(marks);
 		
 
@@ -38,7 +38,7 @@ public class Average {
 	    double average;
 
 	    for(int i=0; i<marks.length; i++) {
-	        sum += marks[i];
+	        sum = sum + marks[i];
 	        
 	    }
 	    
