@@ -1,42 +1,38 @@
 package benko.com;
 
+import java.util.regex.Pattern;
+
 public class Logins {
 
 	public static void main(String[] args) {
-				
-		String test = "dopodzi:elenia";
-		//String p = test.substring(2,5);
-		//System.out.println(p);
 		
-		//String[] test1 = {"kwasek"};
+		String[] names = {"Piotr Budynek", 
+				"Jan nowak",
+				"karolina Mirek",
+				"Zenon Piwko",
+				"Maria Kamena"};
 		
-//		String[] names = {"piotr budynek", 
-//				"jan nowak",
-//				"karolina Mirek",
-//				"zenon Piwko",
-//				"Maria Kamena"};
-		
-		//for(int i=0; i<5; i++)
-			//names[i] = names.toString();
-	
-		//for(String k:names);
-		//	System.out.println(k);
-		
-		//String[] n = new String[];
-	
-		//String n = names.substring(5,2);
-		//System.out.println(n);
-	String[] aa = test.split(":");
+		for(int i=0; i<names.length; i++) {
+			String[] splited = names[i].split(" ");
+			String subn = splited[0].substring(0, 2);
+			String subs = splited[1].substring(0, 3);
+			String subname = subn.toLowerCase();
+			String subsurname = subs.toLowerCase();
 			
-	System.out.println(aa);
+			System.out.println(splited[0] + " " + splited[1]);	
+			System.out.println(subname + subsurname + "@gmail.com");
+		}
 		
+		 
+			
 		
 		
 		
 			
-			
-	}	
+		
+	}
 }
+
 
 
 
