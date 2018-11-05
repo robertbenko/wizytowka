@@ -39,7 +39,7 @@ public class BubbleSort {
          zwieksz(a);
          System.out.println(a);
          
-         for (int i = 0; i < zwieksz(a); i++) {
+         for (int i = 0; i < jakasLiczba(0); i++) {
              System.out.println(zwieksz(a));
           }
      }
