@@ -26,6 +26,11 @@ public class TestClass {
 			if (tab[i] != 0)
 			System.out.println(tab[i]);
 		
+	//	Dividers dividers = new Dividers();
+		
+		//dividers.checkDivider(tab);
+		//Dividers.printDivider();
+		
 	}
 
 }

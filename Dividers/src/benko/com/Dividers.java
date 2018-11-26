@@ -23,7 +23,7 @@ public class Dividers {
 	}
 	
 	
-//sprawdza, czy liczba a dzieli się przez liczbę 
+//sprawdza, czy liczba a dzieli się przez liczbę b
 	
 	static int[] checkDivider(int[] b) {
 
@@ -34,6 +34,7 @@ public class Dividers {
 			if(readNumber(a) % i == 0)
 				tab[i] = i;
 		
+		System.out.println(b);
 	return b;
 	}
 	
