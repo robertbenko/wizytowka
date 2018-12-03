@@ -22,15 +22,15 @@ public class BusinessCard {
 		String city = "Krakhhh";
 		
 	
-	String star = "*";
-	int i;
-	int licznik = 0;
-	int stars;
-	String empty = "";
-	String oneSpace = " ";
-	String empty1= "";
-	String spacesPlusStar = null;
-	int test=0;
+		String star = "*";
+		int i;
+		int licznik = 0;
+		int stars;
+		String empty = "";
+		String oneSpace = " ";
+		String empty1= "";
+		String spacesPlusStar = null;
+		int test = 0;
 
 // ŁĄCZENIE STOPKI
 	
